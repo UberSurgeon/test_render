@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     port: process.env.PORT || 5173,  // Use the PORT from Render or fallback to 5173 for local development
     host: '0.0.0.0',  // Make the server accessible on any network interface
+    allowedHosts: ['test-render-v51i.onrender.com'],
   },
 })
 
